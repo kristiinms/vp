@@ -1,0 +1,26 @@
+<?php
+	$author_name = "Kristiin Marleen Suik";
+	//echo $author_name
+	$full_time_now = date ("d.m.Y H:i:s");
+	$weekday_names_et = ["esmaspäev","teisipäev","kolmapäev","neljapäev","reede","laupäev","pühapäev"];
+	//echo $weekday_names_et [2];
+	$weekday_now = date("N");
+	$hour_now = date("H");
+	$part_of_day = "suvaline hetk";
+	// == on võrdne != pole võrdne <  > <=  >=
+	if($weekday_now <=5)
+	<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <title>Kristiin, veebiprogrammeerimine</title>
+</head>
+<body>
+    <hl>Kristiin, Veebiprogrammerimine</hl>
+  <p>Õppetöö raames loodud leht, mis ei sisalda tõsist infot!</p>
+  <p>Õppetöö toimus <a href="https://www.tlu.ee">Tallinna Ülikoolis</a>.</p>
+  <img src="pics/tlu_33.jpg" alt="Tallinna Ülikooli Astra õppehoone">
+  <p>Lehe avamise hetk: <?php echo $weekday_names_et[$weekday_now - 1] .", " .$full_time_now; ?>.</p>
+  <p>Praegu on <?php echo $part_of_day; ?>.</p>
+</body>
+</html>
